@@ -1,5 +1,5 @@
 
-var button= document.getElementById('textButton');
+var button= document.getElementById("textButton");
 
 button.addEventListener ("click",redirekcija);
 
