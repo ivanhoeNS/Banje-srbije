@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<Html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="prvi.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.boostrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <title>responsive</title>
+</head>
+
+<body>
+ <!-- heder i navigacija -->
+	<div class="mainContainer">
+	<div class="Header"></div>
+
+	<div class="toggle">
+		<i class="fa fa-bars menu" aria-hidden="true"></i>
+    </div>
+
+	<div class="NavDiv">
+		<ul id="navFor">
+
+		<li><a href="http://selo.rs">O NAMA</a></li>
+		<li><a href="#ponuda">PONUDA</a></li>
+		<li><a href="#cenovnik">CENOVNIK</a></li>
+		<li><a href="http://selo.rs">KONTAKT</a></li>
+
+        </ul>
+		
+
+
+
+	</div>
+	<script type="text/javascript" src="prvi.js"></script>
+
+	<!-- slika u bluru sa divizijom nad njom tekstom i dugmetom-->
+
+	<div class="conteiner">
+
+	  <div class="imageContainer"></div>
+
+	  <div class="bg-text">
+  <h1>BANJE SRBIJE</h1>
+  <button id="textButton"> Kontaktirajte nas</button>
+    </div>
+	</div>
+	<script type="text/javascript" src="dugme.js"></script>
+
+	<!-- glavne divizije sa tekstom o banjama -->
+
+	<div class="glavnaDivizija">
+		<a name="ponuda"></a>
+
+		<h1>BANJA KANJIŽA</h1>
+
+		<p>Nalazi se na severoistoku Srbije. Udaljena je 120 kilometara od Novog Sada i 200 kilometara od Beograda.
+
+Kanjiža je bogata termalnim izvorima. Temperatura mineralne vode se kreće između 50°C i 72°C. Voda se koristi kao lekovito sredstvo u terapijama, ali i u rekreativne svrhe. U Kanjiži se leče <strong>reuma, koštane povrede, oštećenja perifernog ili centralnog nervnog sistema</strong>  itd.
+
+U okviru kompleksa hotela i rehabilitacionog centra Aquamarin se nalaze dva bazena zatvorenog tipa, sauna, sportska hala (broji 600 sedišta), teretana, prostorija sa dva stola za stoni tenis,  dva terena za tenis na otvorenom.
+
+Ovde možete sebi priuštiti masažu vulkanskim kamenjem ili tretman tela čoko-mintom. Ukupan broj ležaja je 150 i možete birati između apartmana, dvokrevetnih ili trokrevetnih soba. Cene dnevnog smeštaja, u zavisnosti šta želite, se kreću od  1.300 dinara (pun pansion za dete) do 4.380 dinara (pun apartmanski pansion za odrasle).</p>
+
+ <h1>BANJA JUNAKOVIĆ</h1>
+
+ <p>Banja Junaković je najpopularnija banja u Vojvodini i nalazi se u Apatinu.U njoj se tretiraju bolesti reume i ginekološki problemi. Međutim, ne morate biti bolesni da biste rekreativno proveli vreme u hotelskom kompleksu koji sadrži bazene na otvorenom,  teren za odbojku na pesku i teniski teren.
+
+U samoj zgradi se nalaze kuglana i dva stola za stoni tenis. Šuma Junaković je prilagođena biciklistima, a ukoliko ne ponesete svoj, možete iznajmiti bicikl u hotelu po ceni od 50 din/h. Priuštite sebi marokanski wellness, biološki tretman lica ili indijsku masažu.</p>
+
+<h1>PALIĆKA BANJA</h1>
+
+<p>Banja Palić je smeštena na Palićkom jezeru. Tradicija lečenja i odmaranja u njoj traje već 160 godina.
+
+Ovde dolaze ljudi koji imaju problem sa išijasom, reumom, ginekološkim problemima, kožnim oboljenjima, nervnim rastrojstvom.
+
+Lečenje u Palićkoj banji se obavlja pijenjem lekovite vode, kupanjem u zagrejanoj vodi i tretmanima blatom. Temperatura vode se kreće oko 25°C. Pored hotela, smeštaj na Paliću pružaju vile i kuće.
+
+Do ove banje se stiže za dva sata lagane vožnje autoputem, iz Beograda, manje od sata iz Novog Sada. Smeštena je 6 km od Subotice.
+
+Banja Palić je naročito omiljena među porodicama sa decom zbog uređenog zoo-vrta, ali i zaljubljeni parovi hrle ovde zbog promotivnih cena i povoljnih ponuda za smeštaj (npr. luksuzni vikend za dvoje po ceni od 6.000 dinara).</p>
+		
+
+
+
+
+
+
+
+
+	</div>
+
+	<!-- slajder je na klik nisam ga stavio da ide automatski onda bi upotrebio fukciju timeinterval -->
+
+	<div class="w3-content w3-display-container" >
+
+<div class="w3-display-container mySlides">
+  <img src="slide1.jpg"  alt="vrnjacka banja" style="width: 100%;">
+  
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="slide2.jpg"  alt="palicka banja" style="width: 100%;">
+  
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="slide3.jpg" alt="junakovic banja" style="width: 100%;">
+ 
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="slide4.jpg"  alt="vrujci banja" style="width: 100%;">
+  
+</div>
+
+
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script type="text/javascript" src="slider.js"></script>
+
+
+<!-- Divizija čistač obavezna da poništi css pravila prethodnog diva-->
+
+<div class="divCistac"></div>
+
+<!--slike banja koje su responsive-->
+
+<div class="divBanja" id="divTurisam">
+	<a name="cenovnik"></a>
+
+   <img src="slide2.jpg"  alt="palicka banja">
+
+   <h1>Cena 300 EURA</h1>
+	
+	
+
+</div>
+<div class="divBanja" id="divTurisam1">
+
+  <img src="slide3.jpg"  alt="vrnjačka banja" >
+
+  <h1>Cena 300 EURA</h1>
+	
+</div>
+<div class="divBanja" id="divTurisam2">
+
+	<img src="slide4.jpg"  alt="Junaković banja" >
+
+	<h1>Cena 300 EURA</h1>
+	
+	
+</div>
+
+<div class="divCistac"></div>
+
+<!--divizija footer-->
+
+<div class="divFooter">
+	
+	<img src="snap.png" alt="snapchat">
+	<img src="facebook.png" alt="facebook">
+	<img src="insta.png" alt="instagram">
+</div>
+
+
+
+
+</div>
+
+<!-- scss sam napisao da možete da vidite moje znanje iz scss-a ali mi kompajler koji nisam platio nego ga koristim i free trial režimu nešto zezao pa sam vam taj fajl samo napisao bez kompajliranja na sam rad. Tu možete videti neka pravila scss koje bih primenio da mi je kompajler ok -->
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+	
+
+
+
+
+
+
+
+
+
+
+
+</Html>
